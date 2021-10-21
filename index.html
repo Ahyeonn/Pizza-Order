@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="En"></html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>Pizza Order</title>
+        <h1>Let's Order Pizza! </h1>
+    </head>
+
+    <body>
+        <div id="grid-all">
+            <section id="box1">
+                <h2>Order Form</h2>
+                <div id="order-name">
+                    <p>Order name</p>
+                    <input id="input-name"type="text"></input>
+                </div>
+
+                <div id="order-diameter">
+                    <p>Diameter (in inches)</p>
+                    <input id="input-diameter" type="range" min="6" max="100"></input>
+                </div>
+
+                <div id="order-topping">
+                    <p>Choose Topping</p>
+                    <select id="select-button">
+                        <option>none</option>
+                        <option>Cheese</option>
+                        <option>Pepperoni</option>
+                        <option>Sausage</option>
+                        <option>Onion and Tomato</option>
+                    </select> 
+            </section>
+
+            <section id="box2">
+                <h2>Order Detail</h2>
+                <div>
+                    <p class="p-tag">Name: </p>
+                    <div class="displays" id="display-name"></div>
+
+                    <p class="p-tag">Diameter: </p>
+                    <div class="displays" id="display-diameter"></div>
+
+                    <p class="p-tag">Cost: </p>
+                    <div class="displays" id="display-cost"></div>
+                </div>
+            </section>
+
+            <section id="box3">
+                <h2>Order Visualization</h2>
+                <div id="display-pic"></div>
+            </section>
+        </div>    
+    <script src="scripts.js"></script>
+    </body>
+</html>
